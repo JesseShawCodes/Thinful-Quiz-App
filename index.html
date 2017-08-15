@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Moog Quiz</title>
+    <link href="index.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <div class="container">
+      <header>
+      <h1>Moog Quiz</h1>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Moog_Music_Logo.svg/2000px-Moog_Music_Logo.svg.png">
+      </header>
+      
+    <main>
+        <div class="start"><button id="start-quiz">Let's Begin</button></div>
+        <div class="question hidden">
+        <h2 class="question-text">></h2>
+        <form id='question-form'>
+            <label class="answer">
+            <input type="radio" name="answerChoice" required>
+            <span></span>
+            </label>
+            <label class="answer">
+            <input type="radio" name="answerChoice" required>
+            <span></span>
+            </label>
+            <label class="answer">
+            <input type="radio" name="answerChoice" required>
+            <span></span>
+            </label>
+            <label class="answer">
+            <input type="radio" name="answerChoice" required>
+            <span></span>
+            </label>
+        <div class="submit" data-popup-open="popup-feedback" type="submit"><button>Submit Answer</button></div>
+        </form>
+        </div>
+        <div class="popup" data-popup="popup-feedback">
+          <div class="popup-inner hidden">
+              <h2 class='txt-center'></h2>
+              <img src="" alt="">
+              <a id="close-feedback-modal" class="popup-close" data-popup-close="popup-feedback" href="#">X</a>
+          </div>
+        </div>
+        <div class="js-final-results txt-center"></div> 
+        <div class="txt-center">
+        <button class='hidden' id='start-quiz-over'>Start over</button>
+        </div>
+    </main>
+        </div>
+          
+  </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="index.js"></script>
+</html>
