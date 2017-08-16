@@ -198,6 +198,7 @@ function handleAnswerSubmits() {
   $('.submit').click(function (e) {
     e.preventDefault();
     var userChoice = $('input[name="answerChoice"]:checked').val();
+    console.log(userChoice);
     checkAnswer(userChoice);
   });
 }
