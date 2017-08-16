@@ -75,11 +75,11 @@ form span {
     max-width:500px;
     width:80%;
     padding:50px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
+    /* position:absolute; */
+    /* top:50%; */
+    /* left:50%; */
+    -webkit-transform:translate(1%, 5%);
+    /* transform:translate(-50%, -50%); */
     box-shadow:0px 2px 6px; rgba(0,0,0,1);
     border-radius:3px;
     background:rgba(229, 229, 229, 0.99);

@@ -144,7 +144,7 @@ function checkAnswer(userChoice) {
   if (state.currentQuestionIndex == state.questions.length) {
     renderFinalResults()
   } else {
-    renderQuestionCard();
+    // renderQuestionCard();
   }
 }
 
@@ -198,7 +198,6 @@ function handleAnswerSubmits() {
   $('.submit').click(function (e) {
     e.preventDefault();
     var userChoice = $('input[name="answerChoice"]:checked').val();
-    console.log(userChoice);
     checkAnswer(userChoice);
   });
 }
@@ -218,6 +217,7 @@ function handleAnswerFeedback() {
   $('#close-feedback-modal').on('click', function (e) {
     var targetPopupClass = $(this).attr('data-popup-close');
     $('[data-popup="' + targetPopupClass + '"]').fadeOut(250);
+    renderQuestionCard();
     e.preventDefault();
   });
 }
